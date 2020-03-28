@@ -1,10 +1,10 @@
 # blog
 
-> My world-class Nuxt.js project
+> Blog Nuxt.js project
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install
 

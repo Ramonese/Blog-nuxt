@@ -6,17 +6,17 @@
 
 <style>
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
   box-sizing: border-box;
 }
-
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+}
 *,
 *:before,
 *:after {
@@ -51,5 +51,10 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+/* Page layout */
+.layout {
+  max-width: 1500px;
+  margin: 1em auto;
 }
 </style>

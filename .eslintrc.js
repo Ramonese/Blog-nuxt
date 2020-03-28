@@ -19,8 +19,9 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-		"prettier/prettier": ["error", {
-		 "endOfLine":"lf"
-	 }],
+	 "no-unused-vars": "ignore",
+	 "prettier/prettier": ["error", {
+		"endOfLine":"lf"
+	}],
   }
 }

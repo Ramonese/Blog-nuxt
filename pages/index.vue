@@ -1,68 +1,66 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        blog
-      </h1>
-      <h2 class="subtitle">
-        My world-class Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <section>
+      <h1>Latest posts</h1>
+    </section>
+    <section class="featured-posts">
+      <article>
+        <h2>Title 1</h2>
+        <p>excerpt</p>
+        <nuxt-link :to="'/posts/' + 1">read more</nuxt-link>
+      </article>
+      <article>
+        <h2>Title 2</h2>
+        <p>
+          Apparently we had reached a great height in the atmosphere, for the
+          sky was a dead black, and the stars had ceased to twinkle. By the same
+          illusion which lifts the horizon of the sea to the level of the
+          spectator on a hillside
+        </p>
+        <nuxt-link :to="'/posts/' + 2">read more</nuxt-link>
+      </article>
+      <article>
+        <h2>Title 1</h2>
+        <p>excerpt</p>
+        <nuxt-link :to="'/posts/' + 1">read more</nuxt-link>
+      </article>
+      <article>
+        <h2>Title 2</h2>
+        <p>
+          Apparently we had reached a great height in the atmosphere, for the
+          sky was a dead black, and the stars had ceased to twinkle. By the same
+          illusion which lifts the horizon of the sea to the level of the
+          spectator on a hillside
+        </p>
+        <nuxt-link :to="'/posts/' + 2">read more</nuxt-link>
+      </article>
+    </section>
   </div>
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
-
 export default {
-  components: {
-    Logo
-  }
+  components: {}
 };
 </script>
 
 <style>
 .container {
   margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  padding: 1em;
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.featured-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: 200px 200px;
+  grid-gap: 20px 30px;
 }
-
-.links {
-  padding-top: 15px;
+.featured-posts article {
+  background: cornflowerblue;
 }
 </style>
