@@ -2,34 +2,34 @@
   <div class="container">
     <section class="featured-posts">
       <PostFeatured
+        id="1"
         title="Title 1"
         text="Apparently we had reached a great
       height in the atmosphere, for the sky was a dead black, and the stars had
       ceased to twinkle. By the same illusion which lifts the horizon of the sea
       to the level of the spectator on a hillside."
-        id="1"
       />
       <PostFeatured
+        id="2"
         title="Title 2"
         text="Apparently we had reached a great
       height in the atmosphere, for the sky was a dead black."
-        id="2"
       />
       <PostFeatured
+        id="3"
         title="Title 3"
         text="Apparently we had reached a great
       height in the atmosphere, for the sky was a dead black, and the stars had
       ceased to twinkle. By the same illusion which lifts the horizon of the sea
       to the level of the spectator on a hillside."
-        id="3"
       />
       <PostFeatured
+        id="3"
         title="Title 3"
         text="Apparently we had reached a great
       height in the atmosphere, for the sky was a dead black, and the stars had
       ceased to twinkle. By the same illusion which lifts the horizon of the sea
       to the level of the spectator on a hillside."
-        id="3"
       />
     </section>
   </div>
