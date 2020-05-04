@@ -1,8 +1,11 @@
 <template>
-  <article>
-    <h3>{{ title }}</h3>
-    <p>{{ text }}</p>
-  </article>
+  <nuxt-link :to="postLink">
+    <article>
+      <h3>{{ title }}</h3>
+      <h4>{{ author }}</h4>
+      <p>{{ text }}</p>
+    </article>
+  </nuxt-link>
 </template>
 
 <script>
@@ -20,6 +23,19 @@ export default {
     text: {
       type: String,
       default: "Apparently we had reached a great height"
+    },
+    author: {
+      type: String,
+      default: "author"
+    },
+    isAdmin: {
+      type: Boolean,
+      required: true
+    }
+  },
+  computed: {
+    postLink() {
+      return this.isAdmin ? "/admin/" + this.id : "/posts/" + this.id;
     }
   }
 };

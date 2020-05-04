@@ -1,43 +1,24 @@
 <template>
   <div>
-    <section>
+    <section class="form">
       <h1>
         New posts
       </h1>
-      <form @submit.prevent="onSave">
-        <input v-model="editedPost.title" />
-        <AppButton @click="onSave">Submit</AppButton>
-        <AppButton @click="onCancel">Cancel</AppButton>
-      </form>
+      <AdminPostForm />
     </section>
   </div>
 </template>
 
 <script>
-import AppButton from "~/components/UI/AppButton.vue";
+import AdminPostForm from "~/components/Admin/AdminPostForm.vue";
 export default {
-  components: {
-    AppButton
-  },
-  data() {
-    return {
-      editedPost: {
-        author: "",
-        title: "",
-        image: "",
-        content: ""
-      }
-    };
-  },
-  methods: {
-    onSave() {
-      console.log(this.editedPost.title);
-    },
-    onCancel() {
-      this.$router.push("/admin");
-    }
-  }
+  components: { AdminPostForm }
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style>
+section.form {
+  max-width: 90ch;
+  margin: auto;
+}
+</style>
